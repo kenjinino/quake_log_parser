@@ -10,4 +10,6 @@ describe QuakeLogParser::Game do
 
   it { should respond_to :name }
   it { should respond_to :players }
+  it { should respond_to :total_kills }
+  it { should respond_to :kills }
 end
