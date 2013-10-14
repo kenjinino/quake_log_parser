@@ -3,6 +3,7 @@ module ArrayHelpers
     def find_or_create_player_by_id_and_name(id, name)
       each do |player|
         if player.id == id
+          player.name = name
           return player
         end
       end
