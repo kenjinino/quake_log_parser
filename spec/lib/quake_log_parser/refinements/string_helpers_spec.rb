@@ -19,7 +19,7 @@ describe "String helpers" do
   it "#clientuserinfochanged" do
     clientuserinfo = '  3:32 ClientUserinfoChanged: 5 n\Dono da Bola\t\0\model\sarge\hmodel\sarge\g_redteam\\g_blueteam\\c1\4\c2\5\hc\95\w\0\l\0\tt\0\tl\0'.clientuserinfochanged
     clientuserinfo[:player_id].to_i.should eql(5)
-    clientuserinfo[:player_name].should eql("Isgalamido")
+    clientuserinfo[:player_name].should eql("Dono da Bola")
   end
 
   it "#kill" do
