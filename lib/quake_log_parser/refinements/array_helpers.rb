@@ -3,7 +3,9 @@ module ArrayHelpers
     def find_or_create_player_by_id_and_name(id, name)
       each do |player|
         if player.id == id
-          player.name = name
+          unless name.empty?
+            player.name = name
+          end
           return player
         end
       end
