@@ -1,6 +1,6 @@
 module ArrayHelpers
   refine Array do
-    def find_or_create_player_by_id_and_name(id, name)
+    def find_or_create_player_by_id_and_name(id, name = "")
       each do |player|
         if player.id == id
           unless name.empty?

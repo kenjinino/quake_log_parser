@@ -5,6 +5,8 @@ using ArrayHelpers
 shared_examples "find and compare" do |players, dummy_player, new_name|
 
   it "a player and it's array" do
+    new_name ||= ""
+
     @found_player = players.find_or_create_player_by_id_and_name(dummy_player.id, new_name)
     @found_player.should be_an_instance_of(QuakeLogParser::Player)
 
@@ -39,7 +41,7 @@ describe "Array helpers" do
 
     context "old player with new empty name" do
       @dummy_player = QuakeLogParser::Player.new(1, "dummy_player")
-      it_should_behave_like "find and compare", Array.new(1, @dummy_player), @dummy_player, ""
+      it_should_behave_like "find and compare", Array.new(1, @dummy_player), @dummy_player
     end
   end
 end
