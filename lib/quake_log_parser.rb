@@ -7,6 +7,8 @@ require 'quake_log_parser/player'
 require 'quake_log_parser/parser'
 require 'quake_log_parser/kill'
 
+require 'json'
+
 module QuakeLogParser
   # Your code goes here...
 end

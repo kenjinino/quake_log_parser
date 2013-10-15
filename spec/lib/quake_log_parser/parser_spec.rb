@@ -66,6 +66,10 @@ describe QuakeLogParser::Parser do
       zeh.deaths.should eql(0)
 
     end
+
+    it "should print the correct game info" do
+      parser.games.first.to_json.should eql("{\"game_1\":{\"total_kills\":4,\"players\":[\"Dono da Bola\",\"Isgalamido\",\"Zeh\"],\"kills\":{\"Dono da Bola\":{\"kills\":-1,\"deaths\":1},\"Isgalamido\":{\"kills\":1,\"deaths\":0},\"Zeh\":{\"kills\":-2,\"deaths\":0}},\"kills_by_means\":{\"MOD_ROCKET\":1,\"MOD_FALLING\":1,\"MOD_TRIGGER_HURT\":2}}}")
+    end
   end
 
   describe "#means_of_death" do

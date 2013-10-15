@@ -32,6 +32,8 @@ module QuakeLogParser
             killed_id = line.kill[:killed_id]
             mean_of_death_id = line.kill[:mean_of_death_id]
 
+            current_game.means_of_death_counter[mean_of_death_id.to_i] += 1
+
             current_game.kills.push(QuakeLogParser::Kill.new(killer_id, killed_id, mean_of_death_id))
 
             killed_player = current_game.players.find_or_create_player_by_id_and_name(killed_id)
