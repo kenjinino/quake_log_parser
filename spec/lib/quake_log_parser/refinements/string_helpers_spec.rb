@@ -5,15 +5,15 @@ using StringHelpers
 describe "String helpers" do
 
   it "#is_initgame?" do
-    "InitGame".is_initgame?.should be_true
+    "InitGame:".is_initgame?.should be_true
   end
 
   it "#is_clientuserinfochanged?" do
-    "ClientUserinfoChanged".is_clientuserinfochanged?.should be_true
+    "ClientUserinfoChanged:".is_clientuserinfochanged?.should be_true
   end
 
   it "#is_kill?" do
-    "Kill".is_kill?.should be_true
+    "Kill:".is_kill?.should be_true
   end
 
   it "#clientuserinfochanged" do

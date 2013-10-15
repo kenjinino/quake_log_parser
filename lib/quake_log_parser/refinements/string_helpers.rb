@@ -1,15 +1,15 @@
 module StringHelpers
   refine String do
     def is_initgame?
-      match(/InitGame/) ? true : false
+      match(/InitGame:/) ? true : false
     end
 
     def is_clientuserinfochanged?
-      match(/ClientUserinfoChanged/) ? true : false
+      match(/ClientUserinfoChanged:/) ? true : false
     end
 
     def is_kill?
-      match(/Kill/) ? true : false
+      match(/Kill:/) ? true : false
     end
 
     def clientuserinfochanged
