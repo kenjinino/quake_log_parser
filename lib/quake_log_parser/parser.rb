@@ -49,6 +49,7 @@ module QuakeLogParser
           when line.is_initgame?
             current_game = QuakeLogParser::Game.new("game_" + i.to_s)
             @games.push current_game
+            i += 1
         end
       end
     end

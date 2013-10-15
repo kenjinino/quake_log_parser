@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = QuakeLogParser::VERSION
   spec.authors       = ["Edson Ninomiya"]
   spec.email         = ["kenjinino07@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{A Quake log parser}
+  spec.summary       = %q{A Quake log parser}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.required_ruby_version = '~> 2.0'
+  spec.executables << 'quakelogparser'
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
