@@ -1,24 +1,27 @@
 # QuakeLogParser
 
-TODO: Write a gem description
+A Quake log parser
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'quake_log_parser'
+    $ git clone https://kenjinin@bitbucket.org/kenjinin/quake_log_parser.git
+    $ cd quake_log_parser
 
 And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install quake_log_parser
+    $ rake install
 
 ## Usage
 
-TODO: Write usage instructions here
+To parse a quake log, execute:
+
+    $ quakelogparser FILE_PATH
+
+For example:
+
+    $ quakelogparser lib/quake_log_parser/support/game.log
 
 ## Contributing
 
