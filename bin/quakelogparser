@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'quake_log_parser'
+
+parser = QuakeLogParser::Parser.new(ARGV[0])
+parser.parse
+parser.games.each do |g|
+  p g.to_json
+  p "-------------------"
+end
