@@ -13,7 +13,7 @@ module StringHelpers
     end
 
     def clientuserinfochanged
-      match(/\s(?<player_id>\d+)\sn\\(?<player_name>[\w\s]+)\\t/)
+      match(/\s(?<player_id>\d+)\sn\\(?<player_name>[\s\w]+[^\t])\\t/)
     end
 
     def kill
